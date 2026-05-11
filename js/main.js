@@ -84,4 +84,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Initialize Fancybox (if available on the page)
+    if (typeof Fancybox !== 'undefined') {
+        Fancybox.bind("[data-fancybox]", {
+            // Options for Fancybox
+            Carousel: {
+                infinite: true,
+            },
+        });
+    }
+
+    // Initialize Gallery Swipers
+    const gallerySwipers = document.querySelectorAll('.gallery-swiper');
+    if (gallerySwipers.length > 0) {
+        gallerySwipers.forEach(swiperEl => {
+            new Swiper(swiperEl, {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: false,
+                pagination: {
+                    el: swiperEl.querySelector('.swiper-pagination'),
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: swiperEl.querySelector('.swiper-button-next'),
+                    prevEl: swiperEl.querySelector('.swiper-button-prev'),
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        });
+    }
 });
