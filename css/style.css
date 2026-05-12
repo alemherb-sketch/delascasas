@@ -19,7 +19,7 @@
     
     --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     --border-radius: 4px; /* Sharper for tech look */
-    --nav-height: 80px;
+    --nav-height: 100px;
 }
 
 /* --- Base Reset --- */
@@ -203,13 +203,25 @@ ul { list-style: none; }
     color: var(--text-main);
 }
 
-.logo span {
-    color: var(--primary-color);
+.logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.15);
 }
 
-.logo i {
-    color: var(--primary-color);
-    font-size: 2.2rem;
+.header.scrolled .logo-img {
+    height: 65px; /* Un poco más pequeño cuando se hace scroll */
+    padding: 5px 12px;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 240, 255, 0.3);
 }
 
 .nav-menu {

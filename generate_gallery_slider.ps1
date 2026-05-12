@@ -33,8 +33,7 @@ $html = @"
     <header class="header scrolled" style="background: rgba(15, 23, 42, 0.95);">
         <div class="container nav-container">
             <a href="../index.html" class="logo">
-                <i class="ph-fill ph-house-line"></i>
-                DELAS<span>CASAS</span>
+                <img src="../assets/logo.png" alt="DE LAS CASAS PERU Logo" class="logo-img">
             </a>
             <button class="mobile-toggle" id="mobile-toggle">
                 <i class="ph ph-list"></i>
@@ -145,8 +144,7 @@ $html += @"
         <div class="container footer-content">
             <div class="footer-brand">
                 <a href="../index.html" class="logo">
-                    <i class="ph-fill ph-house-line"></i>
-                    DELAS<span>CASAS</span>
+                    <img src="../assets/logo.png" alt="DE LAS CASAS PERU Logo" class="logo-img">
                 </a>
                 <p>Especialistas en casas prefabricadas y estructuras modulares a nivel nacional.</p>
             </div>
