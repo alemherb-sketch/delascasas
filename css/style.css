@@ -199,30 +199,19 @@ ul { list-style: none; }
     gap: 0.5rem;
 }
 
+.logo i {
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
 .header.scrolled .logo {
     color: var(--text-main);
 }
 
-.logo-img {
-    height: 80px;
-    width: auto;
-    object-fit: contain;
-    transition: var(--transition);
-    background: rgba(255, 255, 255, 0.95);
-    padding: 8px 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.15);
-}
 
-.header.scrolled .logo-img {
-    height: 65px; /* Un poco más pequeño cuando se hace scroll */
-    padding: 5px 12px;
-}
-
-.logo:hover .logo-img {
-    transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 240, 255, 0.3);
-}
 
 .nav-menu {
     display: flex;
