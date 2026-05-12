@@ -53,7 +53,7 @@ $html = @"
         <div class="container">
             <div class="section-title text-center fade-up visible">
                 <span class="subtitle">Portafolio</span>
-                <h2>Galería de Trabajos</h2>
+                <h2>Galer&iacute;a de Trabajos</h2>
                 <p>Explora todos los proyectos que hemos realizado a nivel nacional. Haz clic en una imagen o video para expandirlo.</p>
             </div>
 
