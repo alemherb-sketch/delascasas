@@ -59,7 +59,7 @@ $html = @"
 
             <!-- VIDEOS SECTION -->
             <div class="gallery-category fade-up visible">
-                <h3 style="color: var(--primary-color); border-bottom: 2px solid rgba(0,240,255,0.2); padding-bottom: 10px; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid rgba(197, 160, 89, 0.2); padding-bottom: 10px; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
                     <i class="ph-fill ph-video-camera"></i> Videos
                 </h3>
                 
@@ -97,7 +97,7 @@ $html += @"
 
             <!-- FOTOS SECTION -->
             <div class="gallery-category fade-up visible delay-1" style="margin-top: 3rem;">
-                <h3 style="color: var(--primary-color); border-bottom: 2px solid rgba(0,240,255,0.2); padding-bottom: 10px; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+                <h3 style="color: var(--primary-color); border-bottom: 2px solid rgba(197, 160, 89, 0.2); padding-bottom: 10px; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
                     <i class="ph-fill ph-camera"></i> Fotos
                 </h3>
                 

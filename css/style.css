@@ -1,24 +1,24 @@
 /* --- CSS Variables & Theming --- */
 :root {
-    --primary-color: #00F0FF; /* Cyan Neon */
-    --primary-dark: #00B8CC;
-    --whatsapp-color: #00FF66;
-    --whatsapp-dark: #00CC52;
+    --primary-color: #C5A059; /* Sophisticated Gold */
+    --primary-dark: #A68549;
+    --whatsapp-color: #25D366;
+    --whatsapp-dark: #128C7E;
     
     --text-main: #E2E8F0;
     --text-muted: #94A3B8;
     --text-light: #FFFFFF;
     
-    --bg-main: #060913;
-    --bg-light: #0B1121;
-    --bg-dark: #03050A;
+    --bg-main: #050B18; /* Deep Navy Blue */
+    --bg-light: #0A1428;
+    --bg-dark: #02060F;
     
-    --glass-bg: rgba(6, 9, 19, 0.7);
-    --glass-border: rgba(0, 240, 255, 0.2);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 240, 255, 0.1);
+    --glass-bg: rgba(5, 11, 24, 0.7);
+    --glass-border: rgba(197, 160, 89, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(197, 160, 89, 0.1);
     
     --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    --border-radius: 4px; /* Sharper for tech look */
+    --border-radius: 4px;
     --nav-height: 100px;
 }
 
@@ -38,8 +38,8 @@ html {
 body {
     background-color: var(--bg-main);
     background-image: 
-        linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(197, 160, 89, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(197, 160, 89, 0.03) 1px, transparent 1px);
     background-size: 40px 40px;
     color: var(--text-main);
     line-height: 1.6;
@@ -60,9 +60,9 @@ h1 {
     background: linear-gradient(90deg, #FFFFFF, var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.3));
+    filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.3));
 }
-h2 { font-size: 2.8rem; text-shadow: 0 0 10px rgba(0, 240, 255, 0.2); }
+h2 { font-size: 2.8rem; text-shadow: 0 0 10px rgba(197, 160, 89, 0.2); }
 h3 { font-size: 1.5rem; color: var(--primary-color); }
 p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1rem; }
 
@@ -207,8 +207,26 @@ ul { list-style: none; }
     color: var(--primary-color);
 }
 
-.header.scrolled .logo {
-    color: var(--text-main);
+.logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 50px;
+    }
+}
+
+.footer-brand .logo-img {
+    height: 65px;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.3));
 }
 
 
@@ -245,7 +263,7 @@ ul { list-style: none; }
 }
 
 .btn-nav-cta {
-    background-color: rgba(0, 240, 255, 0.1);
+    background-color: rgba(197, 160, 89, 0.1);
     color: var(--primary-color) !important;
     border: 1px solid var(--primary-color);
     padding: 0.6rem 1.5rem;
@@ -259,7 +277,7 @@ ul { list-style: none; }
 .btn-nav-cta:hover { 
     background-color: var(--primary-color); 
     color: #000 !important;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.5);
 }
 
 .mobile-toggle {
@@ -397,11 +415,11 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     gap: 1rem;
-    box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
     backdrop-filter: blur(10px);
 }
 .experience-badge .number {
-    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+    text-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
 }
 
 .experience-badge .number {
@@ -512,7 +530,7 @@ ul { list-style: none; }
 .service-icon {
     width: 70px;
     height: 70px;
-    background-color: rgba(0, 240, 255, 0.1);
+    background-color: rgba(197, 160, 89, 0.1);
     color: var(--primary-color);
     border-radius: 12px;
     transform: rotate(45deg);
