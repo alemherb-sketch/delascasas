@@ -125,4 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // Force Hero Video Playback (Fix for some mobile browsers)
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        heroVideo.play().catch(error => {
+            console.log("Autoplay was prevented, waiting for interaction.");
+            // Optional: play on first user interaction if needed
+            document.addEventListener('click', () => {
+                heroVideo.play();
+            }, { once: true });
+        });
+    }
 });

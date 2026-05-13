@@ -244,7 +244,8 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
     .logo-text {
-        display: none; /* Hide text on very small screens to avoid crowding */
+        font-size: 0.85rem;
+        letter-spacing: 0;
     }
 }
 
