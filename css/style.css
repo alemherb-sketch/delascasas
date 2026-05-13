@@ -214,9 +214,37 @@ ul { list-style: none; }
     transition: var(--transition);
 }
 
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    background: linear-gradient(to right, #C5A059 0%, #F5E0B0 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.5));
+    transition: var(--transition);
+}
+
+.logo:hover .logo-text {
+    filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.8));
+    transform: scale(1.02);
+}
+
 @media (max-width: 768px) {
     .logo-img {
         height: 50px;
+    }
+    .logo-text {
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none; /* Hide text on very small screens to avoid crowding */
     }
 }
 
